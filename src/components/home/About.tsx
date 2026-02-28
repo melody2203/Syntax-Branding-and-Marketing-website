@@ -23,8 +23,8 @@ export function About() {
                         className="space-y-8"
                     >
                         <div>
-                            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">
-                                Pioneering the next era of digital products.
+                            <h2 className="text-4xl md:text-6xl font-serif tracking-tight mb-4 text-white">
+                                Pioneering the next era of <span className="text-blue-500">digital products.</span>
                             </h2>
                             <p className="text-gray-400 text-lg leading-relaxed">
                                 At Syntax, we don't just write code; we architect solutions that elevate businesses. Our team of expert engineers and designers collaborate to deliver software that is both elegant and robust.
@@ -48,10 +48,10 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
-                        <div className="aspect-[4/3] rounded-2xl overflow-hidden relative glass border border-white/10 p-2">
+                        <div className="aspect-[4/3] rounded-2xl overflow-hidden relative border border-white/5 p-2 bg-white/5">
                             <div className="w-full h-full bg-neutral-900 rounded-xl overflow-hidden relative">
                                 {/* Placeholder for an actual team/office image */}
-                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10" />
+                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/20 to-blue-900/20" />
                                 <div className="absolute inset-0 flex items-center justify-center">
                                     <span className="text-white/20 font-medium">Abstract / Team Preview</span>
                                 </div>
@@ -59,8 +59,8 @@ export function About() {
                         </div>
 
                         {/* Floating stats card */}
-                        <div className="absolute -bottom-6 -left-6 glass-heavy p-6 rounded-2xl inline-block">
-                            <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
+                        <div className="absolute -bottom-6 -left-6 bg-[#020202] border border-white/10 p-6 rounded-2xl inline-block shadow-2xl">
+                            <div className="text-4xl font-serif text-white">
                                 10+
                             </div>
                             <div className="text-sm text-gray-400 font-medium mt-1">Years Experience</div>

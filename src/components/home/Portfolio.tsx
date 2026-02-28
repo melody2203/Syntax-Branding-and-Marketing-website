@@ -33,25 +33,24 @@ const portfolioItems = [
 
 export function Portfolio() {
     return (
-        <section id="portfolio" className="py-24 relative overflow-hidden">
+        <section id="portfolio" className="py-24 relative overflow-hidden bg-[#020202]">
             {/* Background glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
                     <div className="max-w-2xl">
-                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Selected Work</h2>
+                        <h2 className="text-4xl md:text-6xl font-serif text-white mb-4">Selected Work</h2>
                         <p className="text-gray-400 text-lg">
                             A glimpse into the digital products we've brought to life for forward-thinking brands.
                         </p>
                     </div>
-                    <Link href="#" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 font-medium transition-colors">
-                        View all projects
-                        <ArrowUpRight size={18} />
+                    <Link href="#" className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/20 text-white hover:bg-blue-600 hover:border-blue-600 transition-colors group">
+                        <ArrowUpRight size={24} className="group-hover:rotate-45 transition-transform" />
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[280px] gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[320px] gap-6">
                     {portfolioItems.map((item, index) => (
                         <motion.div
                             key={index}
@@ -59,20 +58,19 @@ export function Portfolio() {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className={`group relative rounded-2xl overflow-hidden glass border-white/10 ${item.size} cursor-pointer`}
+                            className={`group relative rounded-2xl overflow-hidden border border-white/5 bg-white/[0.02] ${item.size} cursor-pointer`}
                         >
-                            <div className={`absolute inset-0 bg-gradient-to-br ${item.bgClass} opacity-50 group-hover:opacity-100 transition-opacity duration-500`} />
+                            <div className={`absolute inset-0 bg-gradient-to-br ${item.bgClass} opacity-20 group-hover:opacity-60 transition-opacity duration-500`} />
 
-                            {/* Abstract Placeholder graphics */}
-                            <div className="absolute inset-0 bg-black/20 mix-blend-overlay" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
 
-                            <div className="absolute inset-x-6 bottom-6 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
-                                <div className="flex items-center justify-between">
+                            <div className="absolute inset-x-8 bottom-8 translate-y-2 opacity-80 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                                <div className="flex items-end justify-between">
                                     <div>
-                                        <h3 className="text-2xl font-bold text-white mb-1">{item.title}</h3>
-                                        <p className="text-sm font-medium text-gray-300">{item.category}</p>
+                                        <p className="text-sm font-semibold tracking-wider uppercase text-blue-400 mb-2">{item.category}</p>
+                                        <h3 className="text-3xl font-serif text-white">{item.title}</h3>
                                     </div>
-                                    <div className="w-10 h-10 rounded-full bg-white text-black flex items-center justify-center -rotate-45 group-hover:rotate-0 transition-transform duration-300">
+                                    <div className="w-12 h-12 rounded-full border border-white/20 text-white flex items-center justify-center -rotate-45 group-hover:rotate-0 transition-transform duration-300">
                                         <ArrowUpRight size={20} />
                                     </div>
                                 </div>

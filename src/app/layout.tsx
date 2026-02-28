@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Instrument_Serif } from "next/font/google";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  weight: "400",
+  variable: "--font-instrument",
   subsets: ["latin"],
 });
 
@@ -21,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} font-sans antialiased bg-[#050505] text-white selection:bg-blue-500/30 flex flex-col min-h-screen`}>
+      <body className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased bg-[#020202] text-white selection:bg-blue-600/30 flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex-grow">
           {children}

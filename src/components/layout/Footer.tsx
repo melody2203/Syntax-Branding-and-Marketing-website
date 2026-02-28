@@ -3,11 +3,11 @@ import { Github, Twitter, Linkedin, Mail } from "lucide-react";
 
 export function Footer() {
     return (
-        <footer className="border-t border-white/10 bg-[#050505] pt-16 pb-8">
+        <footer className="border-t border-white/5 bg-[#020202] pt-16 pb-8">
             <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                 <div className="space-y-4 md:col-span-1">
                     <Link href="/" className="text-2xl font-bold tracking-tighter block">
-                        Syntax<span className="text-blue-500">.</span>
+                        Syntax<span className="text-blue-600">.</span>
                     </Link>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Elevating brands through premium digital experiences and cutting-edge software engineering.
