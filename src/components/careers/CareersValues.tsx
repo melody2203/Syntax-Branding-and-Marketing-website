@@ -63,7 +63,7 @@ export function CareersValues() {
         <section className="py-32 container mx-auto px-6 md:px-12 bg-white text-black">
             <h2 className="text-7xl md:text-9xl font-serif mb-24 tracking-tight">Our values</h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border border-gray-100">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0 border-y border-gray-100">
                 {CAREERS_VALUES.map((val, idx) => (
                     <motion.div
                         key={idx}

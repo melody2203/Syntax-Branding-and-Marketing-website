@@ -10,7 +10,7 @@ const NAV_LINKS = [
     { name: "Client Stories", href: "/#client-stories" },
     { name: "About", href: "/about" },
     { name: "Careers", href: "/careers" },
-    { name: "Services", href: "/#services", hasDropdown: true },
+    { name: "Services", href: "/#services" },
     { name: "Testimonials", href: "/#testimonials" },
 ];
 
