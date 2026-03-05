@@ -27,7 +27,7 @@ export function About() {
                                 Pioneering the next era of <span className="text-blue-500">digital products.</span>
                             </h2>
                             <p className="text-gray-400 text-lg leading-relaxed">
-                                At Syntax, we don't just write code; we architect solutions that elevate businesses. Our team of expert engineers and designers collaborate to deliver software that is both elegant and robust.
+                                At Syntax, we don&apos;t just write code; we architect solutions that elevate businesses. Our team of expert engineers and designers collaborate to deliver software that is both elegant and robust.
                             </p>
                         </div>
 

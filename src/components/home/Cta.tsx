@@ -26,7 +26,7 @@ export function Cta() {
                         digital presence?
                     </h2>
                     <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto relative z-10">
-                        Let's collaborate to build software solutions that engage users, streamline operations, and drive real business growth.
+                        Let&apos;s collaborate to build software solutions that engage users, streamline operations, and drive real business growth.
                     </p>
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
                         <Link

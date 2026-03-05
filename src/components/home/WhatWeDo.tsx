@@ -67,7 +67,7 @@ export function WhatWeDo() {
             <div className="container mx-auto px-6 md:px-12">
                 <p className="text-sm font-bold tracking-widest uppercase mb-8">What we do</p>
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif leading-tight mb-20 max-w-5xl text-[#1a1a1a]">
-                    We've taken products from napkins to definition to implementation to deployment to scaling to maintenance, and every step in between.
+                    We&apos;ve taken products from napkins to definition to implementation to deployment to scaling to maintenance, and every step in between.
                 </h2>
 
                 <div className="flex flex-col lg:flex-row border-t-2 border-white">

@@ -124,9 +124,9 @@ export default function AboutPage() {
                             <div className="h-screen flex flex-col justify-center px-12 lg:px-24">
                                 <h2 className="text-6xl md:text-7xl font-serif mb-12">How we do<br />things</h2>
                                 <div className="space-y-6 text-lg text-gray-700 max-w-lg">
-                                    <p>At Itekako, we're all about mixing tech smarts with a dash of 'Itekako magic' to deliver the best possible digital products for our clients.</p>
+                                    <p>At Itekako, we&apos;re all about mixing tech smarts with a dash of &apos;Itekako magic&apos; to deliver the best possible digital products for our clients.</p>
                                     <p>We run in sprints (agile, usually), but essentially we are marathoners - the people we work with and the clients we work for have been with us for a long time.</p>
-                                    <p>We're all about IT (that's information tech) and 'kako' (that's Serbian for 'how') —which means we're crazy curious about everything we do.</p>
+                                    <p>We&apos;re all about IT (that&apos;s information tech) and &apos;kako&apos; (that&apos;s Serbian for &apos;how&apos;) —which means we&apos;re crazy curious about everything we do.</p>
                                 </div>
                             </div>
 

@@ -30,10 +30,10 @@ export function Contact() {
                         transition={{ duration: 0.6 }}
                     >
                         <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">
-                            Let's build something extraordinary.
+                            Let&apos;s build something extraordinary.
                         </h2>
                         <p className="text-gray-400 text-lg mb-16">
-                            Have a project in mind? We'd love to hear about it. Drop us a message and our team will get back to you within 24 hours.
+                            Have a project in mind? We&apos;d love to hear about it. Drop us a message and our team will get back to you within 24 hours.
                         </p>
 
                         <div className="space-y-8">

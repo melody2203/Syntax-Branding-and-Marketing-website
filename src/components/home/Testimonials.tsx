@@ -28,7 +28,7 @@ export function Testimonials() {
                 <div className="text-center max-w-2xl mx-auto mb-20">
                     <h2 className="text-4xl md:text-6xl font-serif text-white mb-6">Client Feedback</h2>
                     <p className="text-gray-400 text-lg">
-                        Don't just take our word for it. Here's what our partners have to say.
+                        Don&apos;t just take our word for it. Here&apos;s what our partners have to say.
                     </p>
                 </div>
 
@@ -44,7 +44,7 @@ export function Testimonials() {
                         >
                             <Quote className="text-blue-600/20 absolute top-8 right-8 group-hover:scale-110 transition-transform" size={48} />
                             <p className="text-gray-300 text-lg leading-relaxed mb-10 relative z-10 font-medium">
-                                "{t.quote}"
+                                &quot;{t.quote}&quot;
                             </p>
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center shrink-0">

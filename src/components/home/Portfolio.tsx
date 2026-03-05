@@ -42,7 +42,7 @@ export function Portfolio() {
                     <div className="max-w-2xl">
                         <h2 className="text-4xl md:text-6xl font-serif text-white mb-4">Selected Work</h2>
                         <p className="text-gray-400 text-lg">
-                            A glimpse into the digital products we've brought to life for forward-thinking brands.
+                            A glimpse into the digital products we&apos;ve brought to life for forward-thinking brands.
                         </p>
                     </div>
                     <Link href="#" className="inline-flex items-center justify-center w-14 h-14 rounded-full border border-white/20 text-white hover:bg-blue-600 hover:border-blue-600 transition-colors group">

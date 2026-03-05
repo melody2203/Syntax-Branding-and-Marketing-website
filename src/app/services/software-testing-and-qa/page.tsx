@@ -31,7 +31,7 @@ export default function SoftwareTestingAndQA() {
                         </div>
                         <div className="p-8 border border-white/10 bg-white/5 rounded-2xl">
                             <h3 className="text-2xl font-semibold mb-4 text-white">Performance Driven</h3>
-                            <p className="text-gray-400">Don't let scale break your system. We simulate extreme traffic and stress-test your architecture to guarantee stability during peak usage.</p>
+                            <p className="text-gray-400">Don&apos;t let scale break your system. We simulate extreme traffic and stress-test your architecture to guarantee stability during peak usage.</p>
                         </div>
                     </div>
 
