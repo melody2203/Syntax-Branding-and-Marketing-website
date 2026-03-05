@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 const NAV_LINKS = [
     { name: "Client Stories", href: "/#client-stories" },
     { name: "About", href: "/about" },
+    { name: "Careers", href: "/careers" },
     { name: "Services", href: "/#services", hasDropdown: true },
     { name: "Testimonials", href: "/#testimonials" },
 ];
