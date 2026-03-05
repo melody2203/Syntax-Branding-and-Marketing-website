@@ -4,8 +4,11 @@ import { Services } from "@/components/home/Services";
 import { Portfolio } from "@/components/home/Portfolio";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { Testimonials } from "@/components/home/Testimonials";
+import { BlogPreview } from "@/components/home/BlogPreview";
 import { Cta } from "@/components/home/Cta";
 import { Contact } from "@/components/home/Contact";
+import { ClientStoriesHome } from "@/components/home/ClientStoriesHome";
+import { WhatWeDo } from "@/components/home/WhatWeDo";
 
 export default function Home() {
   return (
@@ -15,7 +18,10 @@ export default function Home() {
       <Services />
       <Portfolio />
       <WhyChooseUs />
+      <ClientStoriesHome />
+      <WhatWeDo />
       <Testimonials />
+      <BlogPreview />
       <Cta />
       <Contact />
     </>
