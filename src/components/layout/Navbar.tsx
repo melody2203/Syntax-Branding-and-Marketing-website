@@ -10,9 +10,7 @@ const NAV_LINKS = [
     { name: "Client Stories", href: "/#client-stories" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/#services", hasDropdown: true },
-    { name: "Portfolio", href: "/#portfolio" },
     { name: "Testimonials", href: "/#testimonials" },
-    { name: "Blog", href: "/blog" },
 ];
 
 const SERVICES_DROPDOWN = [

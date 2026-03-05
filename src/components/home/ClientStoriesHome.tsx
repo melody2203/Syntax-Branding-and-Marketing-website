@@ -39,7 +39,7 @@ export function ClientStoriesHome() {
                 </h2>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-16">
                     <span className="text-xl font-medium">Check out all client stories</span>
-                    <Link href="/portfolio" className="bg-[#D1FF00] text-black px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#b8e600] transition-colors w-fit text-sm tracking-wide">
+                    <Link href="/#portfolio" className="bg-[#D1FF00] text-black px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#b8e600] transition-colors w-fit text-sm tracking-wide">
                         MORE <ArrowRight size={18} />
                     </Link>
                 </div>
