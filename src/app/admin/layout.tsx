@@ -23,6 +23,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         } else {
             setAuthorized(true);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [router, pathname]);
 
     if (pathname === "/admin/login") {
