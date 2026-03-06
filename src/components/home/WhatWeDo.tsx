@@ -63,7 +63,7 @@ export function WhatWeDo() {
     const [activeService, setActiveService] = useState(services[0]);
 
     return (
-        <section className="py-24 bg-[#eef4f4] text-black">
+        <section className="py-24 bg-white text-black border-y border-gray-100">
             <div className="container mx-auto px-6 md:px-12">
                 <p className="text-sm font-bold tracking-widest uppercase mb-8">What we do</p>
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif leading-tight mb-20 max-w-5xl text-[#1a1a1a]">

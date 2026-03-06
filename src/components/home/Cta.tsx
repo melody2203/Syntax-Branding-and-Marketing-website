@@ -6,9 +6,9 @@ import { ArrowRight } from "lucide-react";
 
 export function Cta() {
     return (
-        <section className="py-24 relative overflow-hidden">
+        <section className="py-24 relative overflow-hidden bg-white">
             <div className="absolute inset-0 z-0">
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[400px] bg-blue-600/20 rounded-full blur-[120px]" />
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[400px] bg-blue-50 rounded-full blur-[120px]" />
             </div>
 
             <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -17,7 +17,7 @@ export function Cta() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-[#020202] border border-white/5 rounded-3xl p-12 md:p-24 text-center relative overflow-hidden"
+                    className="bg-black border border-white/5 rounded-[40px] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
                 >
                     <div className="absolute inset-0 bg-blue-600/5 mix-blend-screen pointer-events-none" />
 
@@ -31,7 +31,7 @@ export function Cta() {
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6 relative z-10">
                         <Link
                             href="#contact"
-                            className="px-10 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-[0_0_20px_rgba(0,102,255,0.3)] hover:shadow-[0_0_30px_rgba(0,102,255,0.5)]"
+                            className="px-10 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold transition-colors flex items-center justify-center gap-2 w-full sm:w-auto shadow-[0_10px_30px_rgba(0,102,255,0.2)]"
                         >
                             Start Your Project
                             <ArrowRight size={18} />
