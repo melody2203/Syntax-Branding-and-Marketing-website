@@ -44,7 +44,7 @@ export default function ProjectsPage() {
         <main className="pt-32 pb-24 bg-white min-h-screen">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="max-w-3xl mb-20 text-center mx-auto">
-                    <h1 className="text-6xl md:text-8xl font-serif mb-8 text-black">Our Projects</h1>
+                    <h1 className="text-6xl md:text-8xl font-serif mb-8 text-black">Selected Work</h1>
                     <p className="text-xl text-gray-500 leading-relaxed font-sans">
                         A curated selection of our most impactful digital solutions, from complex fintech ecosystems to high-conversion mobile experiences.
                     </p>

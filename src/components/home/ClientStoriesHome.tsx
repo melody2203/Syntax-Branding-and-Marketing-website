@@ -47,7 +47,7 @@ export function ClientStoriesHome() {
                     We architect, build and test IT solutions for Fortune 500, SMEs and startups of all sizes.
                 </h2>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-16">
-                    <span className="text-xl font-medium text-gray-700">Check out all client stories</span>
+                    <span className="text-xl font-medium text-gray-700">Check out all selected work</span>
                     <Link href="/projects" className="bg-[#D1FF00] text-black px-6 py-2.5 rounded-full font-bold flex items-center gap-2 hover:bg-[#b8e600] transition-colors w-fit text-sm tracking-wide shadow-sm">
                         VIEW PROJECTS <ArrowRight size={18} />
                     </Link>

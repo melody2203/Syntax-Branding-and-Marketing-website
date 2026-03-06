@@ -7,10 +7,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
-    { name: "Client Stories", href: "/#client-stories" },
-    { name: "About", href: "/about" },
-    { name: "Careers", href: "/careers" },
     { name: "Services", href: "/#services" },
+    { name: "Portfolio", href: "/#client-stories" },
+    { name: "About Us", href: "/about" },
+    { name: "Careers", href: "/careers" },
     { name: "Testimonials", href: "/#testimonials" },
 ];
 

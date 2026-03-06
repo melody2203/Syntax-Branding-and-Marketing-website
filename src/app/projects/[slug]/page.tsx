@@ -85,7 +85,7 @@ export default function ProjectPage() {
                     href="/#client-stories"
                     className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-black transition-colors mb-12 uppercase tracking-widest"
                 >
-                    <ArrowLeft size={16} /> Back to Stories
+                    <ArrowLeft size={16} /> Back to Portfolio
                 </Link>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
