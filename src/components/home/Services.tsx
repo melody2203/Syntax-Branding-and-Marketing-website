@@ -15,11 +15,6 @@ const services = [
         description: "Intuitive, user-centered designs that drive engagement and create lasting impressions."
     },
     {
-        icon: <Cloud size={24} className="text-blue-600" />,
-        title: "Cloud Solutions",
-        description: "Cloud-native architectures and migrations ensuring high availability and scalability."
-    },
-    {
         icon: <Shield size={24} className="text-blue-600" />,
         title: "Cybersecurity",
         description: "Proactive security measures and audits to keep your applications and data secure."

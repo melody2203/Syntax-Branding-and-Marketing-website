@@ -26,23 +26,6 @@ const services = [
         ]
     },
     {
-        id: "devops",
-        name: "DevOps and Migrations",
-        href: "/services/devops-and-migrations",
-        icon: (
-            <div className="w-8 h-8 bg-[#D1FF00] relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-5 h-5 bg-black"></div>
-                <div className="absolute bottom-0 left-0 w-5 h-5 bg-black"></div>
-                <div className="absolute top-0 left-0 border-[10px] border-transparent border-t-black border-l-black"></div>
-            </div>
-        ),
-        subServices: [
-            { name: "Cloud Native Architectures", icon: <Cloud size={24} /> },
-            { name: "CI/CD Automation", icon: <Code2 size={24} /> },
-            { name: "Security and Compliance", icon: <Shield size={24} /> }
-        ]
-    },
-    {
         id: "qa",
         name: "Software testing and QA",
         href: "/services/software-testing-and-qa",

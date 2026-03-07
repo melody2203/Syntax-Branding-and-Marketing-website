@@ -88,14 +88,39 @@ export default function AboutPage() {
                     >
                         Our Story
                     </motion.h1>
-                    <motion.div
+                    <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans max-w-prose"
                     >
-                        Itekako is an IT software development company founded more than 15 years ago with the idea to create a friendly and enthusiastic work environment where work-life balance and innovative projects make people happy to come on Mondays. That enthusiasm, a sense of accountability, and a pursuit for excellence in delivery enabled us to grow to 150+ people, 200+ successful projects in 11+ industries, so far.
+                        Syntax is a premium software development company dedicated to building elite digital products. Founded with a vision to merge technical precision with creative innovation, we provide a high-scale environment where engineering excellence meets impactful delivery. Our commitment to accountability and pursuit of excellence has enabled us to deliver 200+ successful projects across 11+ industries.
+                    </motion.p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="bg-gray-50 p-12 rounded-[40px] border border-gray-100"
+                    >
+                        <h3 className="text-3xl font-serif mb-6 text-black">Our Philosophy</h3>
+                        <p className="text-lg text-gray-500 leading-relaxed font-sans">
+                            At Syntax, we&apos;re all about mixing technical mastery with strategic thinking to deliver the best possible digital products for our clients. We believe in code that scales and designs that inspire.
+                        </p>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="bg-black text-white p-12 rounded-[40px] shadow-2xl"
+                    >
+                        <h3 className="text-3xl font-serif mb-6">Our Mission</h3>
+                        <p className="text-lg text-gray-400 leading-relaxed font-sans">
+                            Our mission is to empower businesses with cutting-edge software solutions. We architect, build, and scale high-performance digital platforms for startups, scale-ups, and enterprise market leaders.
+                        </p>
                     </motion.div>
                 </div>
 
@@ -124,7 +149,7 @@ export default function AboutPage() {
                             <div className="h-screen flex flex-col justify-center px-12 lg:px-24">
                                 <h2 className="text-6xl md:text-7xl font-serif mb-12">How we do<br />things</h2>
                                 <div className="space-y-6 text-lg text-gray-700 max-w-lg">
-                                    <p>At Itekako, we&apos;re all about mixing tech smarts with a dash of &apos;Itekako magic&apos; to deliver the best possible digital products for our clients.</p>
+                                    <p>At Syntax, we&apos;re all about mixing technical mastery with strategic thinking to deliver the best possible digital products for our clients. We believe in code that scales and designs that inspire.</p>
                                     <p>We run in sprints (agile, usually), but essentially we are marathoners - the people we work with and the clients we work for have been with us for a long time.</p>
                                     <p>We&apos;re all about IT (that&apos;s information tech) and &apos;kako&apos; (that&apos;s Serbian for &apos;how&apos;) —which means we&apos;re crazy curious about everything we do.</p>
                                 </div>
@@ -134,8 +159,8 @@ export default function AboutPage() {
                             <div className="h-screen flex flex-col justify-center px-12 lg:px-24">
                                 <h2 className="text-6xl md:text-7xl font-serif mb-12">Our Mission</h2>
                                 <div className="space-y-6 text-lg text-gray-700 max-w-lg">
-                                    <p>At Itekako, our mission is to ignite businesses worldwide with cutting-edge software solutions. We create, build, and scale all things digital, serving startups, scale-ups, and big players.</p>
-                                    <p>Through teamwork, our tech wizardry, and a relentless pursuit of awesomeness, we help our clients conquer their tech dreams and stay ahead in an ever-evolving digital universe.</p>
+                                    <p>At Syntax, our mission is to ignite businesses worldwide with cutting-edge software solutions. We create, build, and scale high-performance digital products, serving startups, scale-ups, and enterprise leaders.</p>
+                                    <p>Through technical mastery, strategic thinking, and a relentless pursuit of excellence, we help our clients realize their digital ambitions and dominate in an ever-evolving technological landscape.</p>
                                 </div>
                             </div>
                         </motion.div>

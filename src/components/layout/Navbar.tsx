@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X, ArrowRight, ArrowUpRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Logo } from "./Logo";
 
 const NAV_LINKS = [
     { name: "Services", href: "/#services" },
@@ -24,17 +25,6 @@ const SERVICES_DROPDOWN = [
                 <div className="bg-black w-full h-full rounded-bl-full"></div>
                 <div className="bg-black w-full h-full rounded-tr-full"></div>
                 <div className="bg-black w-full h-full rounded-tl-full"></div>
-            </div>
-        )
-    },
-    {
-        name: "DevOps and Migrations",
-        href: "/services/devops-and-migrations",
-        icon: (
-            <div className="w-12 h-12 bg-[#D1FF00] relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-8 h-8 bg-black"></div>
-                <div className="absolute bottom-0 left-0 w-8 h-8 bg-black"></div>
-                <div className="absolute top-0 left-0 border-[16px] border-transparent border-t-black border-l-black"></div>
             </div>
         )
     },
@@ -102,9 +92,7 @@ export function Navbar() {
             onMouseLeave={() => setHoveredLink(null)}
         >
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between relative z-10">
-                <Link href="/" className="text-2xl font-bold tracking-tighter text-black">
-                    Syntax<span className="text-blue-600">.</span>
-                </Link>
+                <Logo />
 
                 {/* Desktop Nav */}
                 <nav className="hidden md:flex items-center gap-8 relative h-full">

@@ -170,7 +170,13 @@ export function OpenPositions() {
                                                                     <Send size={32} />
                                                                 </div>
                                                                 <h4 className="text-2xl font-serif mb-2">Application Sent!</h4>
-                                                                <p className="text-gray-500 font-sans">We&apos;ll review your profile and get back to you soon.</p>
+                                                                <p className="text-gray-500 font-sans mb-8">We&apos;ll review your profile and get back to you soon.</p>
+                                                                <button
+                                                                    onClick={() => setFormSubmitted(false)}
+                                                                    className="px-8 py-3 rounded-full border-2 border-black text-black font-bold text-xs hover:bg-black hover:text-white transition-all"
+                                                                >
+                                                                    BACK TO POSITION
+                                                                </button>
                                                             </div>
                                                         ) : (
                                                             <form onSubmit={handleApplySubmit} className="space-y-6">

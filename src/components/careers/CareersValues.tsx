@@ -83,7 +83,7 @@ export function CareersValues() {
                                         className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
                                     />
                                 </div>
-                                {/* Vibrant Teal Geometric Overlays from Itekako design */}
+                                {/* Vibrant Teal Geometric Overlays for branding design */}
                                 {val.squares.map((sq, sIdx) => (
                                     <div
                                         key={sIdx}
