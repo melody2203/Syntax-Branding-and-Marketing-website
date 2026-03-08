@@ -5,32 +5,57 @@ import { useRef } from "react";
 import Image from "next/image";
 
 
+type SquareOverlay = {
+    top?: string;
+    bottom?: string;
+    left?: string;
+    right?: string;
+    size: string;
+    type?: 'diamond' | 'triangle' | 'square';
+};
+
 type ValueCard = {
     title: string;
     desc: string;
     img: string;
+    squares: SquareOverlay[];
 };
 
 const VALUES: ValueCard[] = [
     {
         title: "Be curious",
         desc: "Search for how things are done, and how they can be done better. Challenge status quo.",
-        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+        img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
+        squares: [
+            { top: "-4%", left: "-4%", size: "12" },
+            { top: "-4%", right: "-4%", size: "16" },
+            { bottom: "-4%", left: "20%", size: "10" }
+        ]
     },
     {
         title: "Grow",
         desc: "Grow knowledge and skills and lift others along the way. Personal and business growth go hand in hand.",
-        img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+        img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80",
+        squares: [
+            { top: "10%", right: "-8%", size: "24", type: "diamond" }
+        ] // Uses a large diamond shape overlay
     },
     {
         title: "Be accountable",
         desc: "Proud of the wins. Honest about the rest. Always accountable.",
-        img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+        img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
+        squares: [
+            { top: "30%", left: "-10%", size: "16" },
+            { bottom: "10%", left: "10%", size: "12" }
+        ]
     },
     {
         title: "Act long run",
         desc: "Work in sprints, but think like a marathoner. Long term results matter.",
-        img: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80"
+        img: "https://images.unsplash.com/photo-1552581234-26160f608093?w=800&q=80",
+        squares: [
+            { bottom: "-5%", right: "-5%", size: "20", type: "triangle" }
+        ]
     }
 ];
 
@@ -127,7 +152,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Right Side: Sticky Geometric Animation */}
-                    <div className="w-1/2 h-full bg-blue-600 flex items-center justify-center relative overflow-hidden shadow-2xl">
+                    <div className="w-1/2 h-full bg-[#020202] flex items-center justify-center relative overflow-hidden shadow-2xl">
                         <motion.div
                             style={{ scale, rotate }}
                             className="grid grid-cols-5 gap-4 md:gap-8"
@@ -167,9 +192,24 @@ export default function AboutPage() {
                                         src={val.img}
                                         alt={val.title}
                                         fill
-                                        className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                                     />
                                 </div>
+                                {/* Cyan Geometric Overlays */}
+                                {val.squares.map((sq, sIdx) => (
+                                    <div
+                                        key={sIdx}
+                                        className="absolute bg-[#00FFAA] mix-blend-multiply z-10 transition-transform duration-500 group-hover:scale-110"
+                                        style={{
+                                            top: sq.top,
+                                            bottom: sq.bottom,
+                                            left: sq.left,
+                                            right: sq.right,
+                                            width: `${sq.size}px`,
+                                            height: `${sq.size}px`,
+                                            clipPath: sq.type === 'diamond' ? 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' : sq.type === 'triangle' ? 'polygon(100% 100%, 0 100%, 100% 0)' : 'none'
+                                        }}
+                                    />
+                                ))}
                             </div>
 
                             <h3 className="text-2xl font-bold mb-4 font-sans">{val.title}</h3>
