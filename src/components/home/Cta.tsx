@@ -17,7 +17,7 @@ export function Cta() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="bg-black border border-white/5 rounded-[40px] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
+                    className="bg-blue-600 border border-white/5 rounded-[40px] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl"
                 >
                     <div className="absolute inset-0 bg-blue-600/5 mix-blend-screen pointer-events-none" />
 

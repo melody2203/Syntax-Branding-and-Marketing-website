@@ -13,10 +13,10 @@ const services = [
         href: "/services/custom-software-development",
         icon: (
             <div className="w-8 h-8 bg-[#D1FF00] grid grid-cols-2 grid-rows-2">
-                <div className="bg-black w-full h-full rounded-br-full"></div>
-                <div className="bg-black w-full h-full rounded-bl-full"></div>
-                <div className="bg-black w-full h-full rounded-tr-full"></div>
-                <div className="bg-black w-full h-full rounded-tl-full"></div>
+                <div className="bg-blue-600 w-full h-full rounded-br-full"></div>
+                <div className="bg-blue-600 w-full h-full rounded-bl-full"></div>
+                <div className="bg-blue-600 w-full h-full rounded-tr-full"></div>
+                <div className="bg-blue-600 w-full h-full rounded-tl-full"></div>
             </div>
         ),
         subServices: [
@@ -31,7 +31,7 @@ const services = [
         href: "/services/building-digital-products",
         icon: (
             <div className="w-8 h-8 bg-[#D1FF00] flex items-center justify-center p-1">
-                <div className="w-full h-full bg-black rounded-lg"></div>
+                <div className="w-full h-full bg-blue-600 rounded-lg"></div>
             </div>
         ),
         subServices: [
@@ -46,7 +46,7 @@ const services = [
         href: "/services/consulting",
         icon: (
             <div className="w-8 h-8 bg-[#D1FF00] rounded-full overflow-hidden flex flex-col">
-                <div className="h-1/2 bg-black w-full"></div>
+                <div className="h-1/2 bg-blue-600 w-full"></div>
                 <div className="h-1/2 bg-[#D1FF00] w-full"></div>
             </div>
         ),
@@ -62,7 +62,7 @@ const services = [
         href: "/services/software-testing-and-qa",
         icon: (
             <div className="w-8 h-8 bg-[#D1FF00] flex items-end justify-start">
-                <div className="w-5 h-5 bg-black border-b-[5px] border-l-[5px] border-[#D1FF00] mb-1 ml-1"></div>
+                <div className="w-5 h-5 bg-blue-600 border-b-[5px] border-l-[5px] border-[#D1FF00] mb-1 ml-1"></div>
             </div>
         ),
         subServices: [

@@ -111,7 +111,7 @@ export default function AboutPage() {
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="bg-black text-white p-12 rounded-[40px] shadow-2xl"
+                        className="bg-blue-600 text-white p-12 rounded-[40px] shadow-2xl"
                     >
                         <h3 className="text-3xl font-serif mb-6">Our Mission</h3>
                         <p className="text-lg text-gray-400 leading-relaxed font-sans">
@@ -152,7 +152,7 @@ export default function AboutPage() {
                     </div>
 
                     {/* Right Side: Sticky Geometric Animation */}
-                    <div className="w-1/2 h-full bg-[#020202] flex items-center justify-center relative overflow-hidden shadow-2xl">
+                    <div className="w-1/2 h-full bg-blue-600 flex items-center justify-center relative overflow-hidden shadow-2xl">
                         <motion.div
                             style={{ scale, rotate }}
                             className="grid grid-cols-5 gap-4 md:gap-8"

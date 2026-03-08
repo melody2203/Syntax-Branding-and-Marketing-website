@@ -11,7 +11,7 @@ const stats = [
 
 export function WhyChooseUs() {
     return (
-        <section className="py-24 bg-white border-y border-gray-50 relative overflow-hidden">
+        <section className="pt-24 pb-12 bg-white border-y border-gray-50 relative overflow-hidden">
             <div className="container mx-auto px-6 md:px-12 mb-16 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -43,19 +43,6 @@ export function WhyChooseUs() {
                         </div>
                     ))}
                 </div>
-            </div>
-
-            {/* Brand Message Headline */}
-            <div className="container mx-auto px-6 md:px-12 mt-20 text-center">
-                <motion.h3
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.8 }}
-                    className="text-3xl md:text-5xl font-serif text-black max-w-4xl mx-auto leading-tight"
-                >
-                    From startup to scale-up and beyond—we build IT that grows with you.
-                </motion.h3>
             </div>
         </section>
     );

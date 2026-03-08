@@ -34,17 +34,17 @@ const stories = [
         name: "Car rental management system",
         category: "SaaS Platform",
         description: "End-to-end fleet management and booking system for rental agencies.",
-        bgClass: "from-slate-700 to-slate-900",
+        bgClass: "from-blue-700 to-blue-900",
         logo: <span className="text-4xl font-bold tracking-widest text-white uppercase">DRIVE</span>
     }
 ];
 
 export function ClientStoriesHome() {
     return (
-        <section id="client-stories" className="py-24 bg-white text-black overflow-hidden border-t border-gray-100">
+        <section id="client-stories" className="pt-12 pb-24 bg-white text-black overflow-hidden border-t border-gray-100">
             <div className="container mx-auto px-6 md:px-12">
                 <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif lg:leading-[1.1] mb-16 max-w-5xl text-black">
-                    We architect, build and test IT solutions for Fortune 500, SMEs and startups of all sizes.
+                    From startup to scale-up and beyond—we build IT that grows with you.
                 </h2>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-16">
                     <span className="text-xl font-medium text-gray-700">Check out all selected work</span>
