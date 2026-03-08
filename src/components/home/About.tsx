@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export function About() {
     const values = [
@@ -48,29 +49,19 @@ export function About() {
                         transition={{ duration: 0.8 }}
                         className="relative"
                     >
-                        <div className="aspect-[4/3] rounded-2xl overflow-hidden relative border border-black/5 p-2 bg-gray-50">
-                            <div className="w-full h-full bg-neutral-100 rounded-xl overflow-hidden relative">
-                                {/* Placeholder for an actual team/office image */}
-                                <div className="absolute inset-0 bg-gradient-to-tr from-blue-600/10 to-blue-900/10" />
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <span className="text-black/10 font-medium">Abstract / Team Preview</span>
-                                </div>
+                        <div className="aspect-[4/3] rounded-2xl overflow-hidden relative border border-black/5 p-2 bg-gray-50 flex items-center justify-center">
+                            <div className="w-full h-full relative rounded-xl overflow-hidden">
+                                <Image
+                                    src="/syntax-logo.jpg"
+                                    alt="Syntax Logo"
+                                    fill
+                                    className="object-contain p-8"
+                                />
                             </div>
                         </div>
 
                         {/* Floating stats card */}
                         <div className="absolute -bottom-6 -left-6 bg-white border border-gray-100 p-6 rounded-2xl inline-block shadow-xl max-w-[200px]">
-                            {/* SVG Logo Icon */}
-                            <div className="w-8 h-8 mb-3">
-                                <svg viewBox="0 0 100 100" className="w-full h-full">
-                                    <path d="M35 25 L15 50 L35 75" fill="none" stroke="#1e293b" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path d="M65 25 L85 50 L65 75" fill="none" stroke="#93c5fd" strokeWidth="10" strokeLinecap="round" strokeLinejoin="round" />
-                                    <circle cx="45" cy="35" r="5" fill="#f59e0b" />
-                                    <path d="M45 40 L45 55 L52 65 L52 75" fill="none" stroke="#f59e0b" strokeWidth="6" strokeLinecap="round" />
-                                    <circle cx="55" cy="25" r="5" fill="#111827" />
-                                    <path d="M55 30 L55 60 L62 70" fill="none" stroke="#111827" strokeWidth="6" strokeLinecap="round" />
-                                </svg>
-                            </div>
                             <div className="text-4xl font-serif text-black">
                                 1+
                             </div>
