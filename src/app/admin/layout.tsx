@@ -45,10 +45,10 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
     ];
 
     return (
-        <div className="flex min-h-screen bg-gray-50 text-black font-sans">
+        <div className="flex min-h-screen bg-[#020202] text-white font-sans selection:bg-blue-600/30">
             {/* Sidebar */}
-            <aside className="w-64 bg-white border-r border-gray-200 flex flex-col fixed inset-y-0 z-20">
-                <div className="p-8 border-b border-gray-100">
+            <aside className="w-64 bg-white/[0.02] backdrop-blur-xl border-r border-white/10 flex flex-col fixed inset-y-0 z-20">
+                <div className="p-8 border-b border-white/5">
                     <Link href="/" className="text-xl font-bold tracking-tighter">
                         Syntax<span className="text-blue-600">.</span> Admin
                     </Link>
@@ -59,7 +59,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors text-sm font-medium ${pathname === link.href ? "bg-blue-50 text-blue-600" : "hover:bg-gray-100"
+                            className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${pathname === link.href ? "bg-blue-600 text-white shadow-[0_0_20px_rgba(0,102,255,0.2)]" : "text-gray-400 hover:bg-white/5 hover:text-white"
                                 }`}
                         >
                             <link.icon size={18} /> {link.name}
@@ -67,13 +67,13 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                     ))}
                 </nav>
 
-                <div className="p-4 border-t border-gray-100">
+                <div className="p-4 border-t border-white/5">
                     <button
                         onClick={() => {
                             logout();
                             router.push("/admin/login");
                         }}
-                        className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-red-50 hover:text-red-600 transition-colors text-sm font-medium"
+                        className="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-gray-400 hover:bg-red-500/10 hover:text-red-500 transition-all text-sm font-medium"
                     >
                         <LogOut size={18} /> Sign Out
                     </button>
@@ -82,10 +82,10 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
             {/* Main Content */}
             <main className="flex-1 ml-64 p-12">
-                <header className="mb-12 flex items-center gap-2 text-sm text-gray-400">
+                <header className="mb-12 flex items-center gap-2 text-sm text-gray-500">
                     <span>Admin</span>
                     <ChevronRight size={14} />
-                    <span className="text-gray-900 font-medium capitalize">
+                    <span className="text-gray-300 font-medium capitalize">
                         {pathname.split("/").pop() || "Dashboard"}
                     </span>
                 </header>

@@ -3,36 +3,36 @@ import { ArrowRight } from "lucide-react";
 
 export default function BuildingDigitalProducts() {
     return (
-        <main className="min-h-screen bg-[#020202] text-white pt-32 pb-24">
+        <main className="min-h-screen bg-white text-black pt-32 pb-24">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="max-w-4xl">
-                    <Link href="/#services" className="text-blue-500 hover:text-blue-400 font-medium flex items-center gap-2 mb-8 group transition-colors">
+                    <Link href="/#services" className="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2 mb-8 group transition-colors">
                         <ArrowRight size={20} className="rotate-180 group-hover:-translate-x-1 transition-transform" />
                         Back to Services
                     </Link>
 
-                    <div className="w-24 h-24 bg-[#D1FF00] flex items-center justify-center p-2 mb-12">
+                    <div className="w-24 h-24 bg-[#D1FF00] flex items-center justify-center p-2 mb-12 shadow-sm rounded-xl">
                         <div className="w-full h-full border-[16px] border-black rounded-full grid grid-cols-2">
                         </div>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
+                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 font-serif">
                         Digital Products <br />
-                        <span className="text-gray-500">End-to-End.</span>
+                        <span className="text-gray-400">End-to-End.</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-gray-400 leading-relaxed mb-12">
+                    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">
                         From ideation to launch, we are your dedicated product team. As a startup, we understand the hustle. We build intuitive, market-ready digital products that resonate with your users and drive growth.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-16">
-                        <div className="p-8 border border-white/10 bg-white/5 rounded-2xl">
-                            <h3 className="text-2xl font-semibold mb-4 text-white">User-Centric Design</h3>
-                            <p className="text-gray-400">We prioritize UX/UI. Every feature we build is designed to be intuitive, engaging, and aligned with your brand identity.</p>
+                        <div className="p-8 border border-gray-100 bg-gray-50 rounded-2xl">
+                            <h3 className="text-2xl font-bold mb-4 text-black font-serif">User-Centric Design</h3>
+                            <p className="text-gray-600">We prioritize UX/UI. Every feature we build is designed to be intuitive, engaging, and aligned with your brand identity.</p>
                         </div>
-                        <div className="p-8 border border-white/10 bg-white/5 rounded-2xl">
-                            <h3 className="text-2xl font-semibold mb-4 text-white">Full-Stack Delivery</h3>
-                            <p className="text-gray-400">No need to hire multiple agencies. We handle everything from frontend aesthetics to backend architecture and database management.</p>
+                        <div className="p-8 border border-gray-100 bg-gray-50 rounded-2xl">
+                            <h3 className="text-2xl font-bold mb-4 text-black font-serif">Full-Stack Delivery</h3>
+                            <p className="text-gray-600">No need to hire multiple agencies. We handle everything from frontend aesthetics to backend architecture and database management.</p>
                         </div>
                     </div>
 

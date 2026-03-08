@@ -3,36 +3,36 @@ import { ArrowRight } from "lucide-react";
 
 export default function Consulting() {
     return (
-        <main className="min-h-screen bg-[#020202] text-white pt-32 pb-24">
+        <main className="min-h-screen bg-white text-black pt-32 pb-24">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="max-w-4xl">
-                    <Link href="/#services" className="text-blue-500 hover:text-blue-400 font-medium flex items-center gap-2 mb-8 group transition-colors">
+                    <Link href="/#services" className="text-blue-600 hover:text-blue-700 font-medium flex items-center gap-2 mb-8 group transition-colors">
                         <ArrowRight size={20} className="rotate-180 group-hover:-translate-x-1 transition-transform" />
                         Back to Services
                     </Link>
 
-                    <div className="w-24 h-24 bg-[#D1FF00] grid grid-cols-2 mb-12">
+                    <div className="w-24 h-24 bg-[#D1FF00] grid grid-cols-2 mb-12 shadow-sm rounded-xl overflow-hidden">
                         <div className="bg-black w-full h-full rounded-r-full"></div>
                         <div className="bg-black w-full h-full rounded-l-full"></div>
                     </div>
 
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
+                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8 font-serif">
                         Expert <br />
-                        <span className="text-gray-500">Consulting.</span>
+                        <span className="text-gray-400">Consulting.</span>
                     </h1>
 
-                    <p className="text-xl md:text-2xl text-gray-400 leading-relaxed mb-12">
+                    <p className="text-xl md:text-2xl text-gray-600 leading-relaxed mb-12">
                         Navigate the complex tech landscape with confidence. Our experienced consultants provide strategic guidance, technical audits, and actionable roadmaps to align your technology with your business goals.
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-8 mb-16">
-                        <div className="p-8 border border-white/10 bg-white/5 rounded-2xl">
-                            <h3 className="text-2xl font-semibold mb-4 text-white">Technical Audits</h3>
-                            <p className="text-gray-400">We analyze your existing architecture, identifying bottlenecks, security vulnerabilities, and areas for optimization.</p>
+                        <div className="p-8 border border-gray-100 bg-gray-50 rounded-2xl">
+                            <h3 className="text-2xl font-bold mb-4 text-black font-serif">Technical Audits</h3>
+                            <p className="text-gray-600">We analyze your existing architecture, identifying bottlenecks, security vulnerabilities, and areas for optimization.</p>
                         </div>
-                        <div className="p-8 border border-white/10 bg-white/5 rounded-2xl">
-                            <h3 className="text-2xl font-semibold mb-4 text-white">Strategic Roadmaps</h3>
-                            <p className="text-gray-400">Stop guessing. We provide a clear, phased approach to digital transformation, ensuring your tech investments drive measurable ROI.</p>
+                        <div className="p-8 border border-gray-100 bg-gray-50 rounded-2xl">
+                            <h3 className="text-2xl font-bold mb-4 text-black font-serif">Strategic Roadmaps</h3>
+                            <p className="text-gray-600">Stop guessing. We provide a clear, phased approach to digital transformation, ensuring your tech investments drive measurable ROI.</p>
                         </div>
                     </div>
 

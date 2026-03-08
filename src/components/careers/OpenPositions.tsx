@@ -1,53 +1,21 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, MapPin, Clock, Search, Briefcase, User, Mail, Phone, Globe, Send } from "lucide-react";
+import { saveApplication, getJobs, Job } from "@/lib/storage";
 
-const INITIAL_JOBS = [
-    {
-        id: "1",
-        title: "Senior Full-stack Engineer",
-        department: "Engineering",
-        location: "Remote / Belgrade",
-        type: "Full-time",
-        salary: "$80k - $120k",
-        description: "Join our core team building high-scale fintech applications using Next.js, Node.js and PostgreSQL."
-    },
-    {
-        id: "2",
-        title: "iOS Developer (Swift/SwiftUI)",
-        department: "Engineering",
-        location: "Remote",
-        type: "Contract",
-        salary: "$60/hr - $90/hr",
-        description: "Architect and develop premium mobile experiences for our Fortune 500 clients."
-    },
-    {
-        id: "3",
-        title: "Product Designer",
-        department: "Design",
-        location: "Belgrade",
-        type: "Full-time",
-        salary: "$50k - $75k",
-        description: "Shape the visual and interactive identity of digital products used by millions."
-    },
-    {
-        id: "4",
-        title: "DevOps Engineer",
-        department: "Operations",
-        location: "Remote",
-        type: "Full-time",
-        salary: "$90k - $130k",
-        description: "Manage AWS infrastructure, CI/CD pipelines and ensure 99.9% uptime for global platforms."
-    }
-];
 
 export function OpenPositions() {
     const [searchTerm, setSearchTerm] = useState("");
     const [activeJob, setActiveJob] = useState<string | null>(null);
     const [isApplying, setIsApplying] = useState(false);
     const [formSubmitted, setFormSubmitted] = useState(false);
+    const [jobs, setJobs] = useState<Job[]>([]);
+
+    useEffect(() => {
+        setJobs(getJobs());
+    }, []);
 
     const [formData, setFormData] = useState({
         name: "",
@@ -56,7 +24,7 @@ export function OpenPositions() {
         portfolio: ""
     });
 
-    const filteredJobs = INITIAL_JOBS.filter(job =>
+    const filteredJobs = jobs.filter(job =>
         job.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         job.department.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -64,6 +32,18 @@ export function OpenPositions() {
     const handleApplySubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setIsApplying(true);
+
+        const selectedJob = jobs.find(j => j.id === activeJob);
+
+        // Save to localStorage
+        saveApplication({
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            portfolio: formData.portfolio,
+            role: selectedJob?.title || "Unknown Position"
+        });
+
         // Simulate submission
         setTimeout(() => {
             setIsApplying(false);
@@ -163,7 +143,10 @@ export function OpenPositions() {
                                                         </div>
                                                     </div>
 
-                                                    <div className="bg-white border border-gray-200 p-8 rounded-[40px] shadow-sm">
+                                                    <div
+                                                        className="bg-white border border-gray-200 p-8 rounded-[40px] shadow-sm"
+                                                        onClick={(e) => e.stopPropagation()}
+                                                    >
                                                         {formSubmitted ? (
                                                             <div className="h-full flex flex-col items-center justify-center text-center py-12">
                                                                 <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-6">

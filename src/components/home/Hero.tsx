@@ -21,13 +21,12 @@ export function Hero() {
                     className="max-w-5xl mx-auto space-y-10"
                 >
                     <h1 className="font-serif text-6xl md:text-8xl lg:text-[100px] font-normal tracking-tight leading-[1.05] text-black">
-                        House of Engineers. <br className="hidden md:block" />
-                        Big enough to deliver, <br className="hidden md:block" />
-                        <span className="text-gray-400">small enough to care.</span>
+                        Your Project’s Home. <br className="hidden md:block" />
+                        <span className="text-gray-400 font-serif">From Blueprint to Launch.</span>
                     </h1>
 
                     <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                        We architect, build and test IT solutions for Fortune 500, SMEs and startups of all sizes.
+                        From startup to scale-up and beyond—we build IT that grows with you.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-10">

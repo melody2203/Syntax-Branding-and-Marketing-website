@@ -61,14 +61,6 @@ export function WeHearYou() {
                                 our organization is structured in a way that your voice is always
                                 heard.
                             </p>
-                            <div className="pt-8">
-                                <div className="flex items-center gap-4 text-black font-medium group cursor-pointer">
-                                    <div className="w-12 h-12 rounded-full bg-black text-[#D1FF00] flex items-center justify-center font-bold text-2xl group-hover:scale-110 transition-transform">
-                                        <Music size={24} />
-                                    </div>
-                                    <span>Besides your voices, we like to listen to great music <span className="inline-block animate-bounce mt-1">😁</span> Check out our Spotify list.</span>
-                                </div>
-                            </div>
                         </div>
                     </motion.div>
                 </div>

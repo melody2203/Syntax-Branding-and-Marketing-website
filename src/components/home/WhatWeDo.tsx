@@ -26,6 +26,37 @@ const services = [
         ]
     },
     {
+        id: "digital-products",
+        name: "End to end digital product",
+        href: "/services/building-digital-products",
+        icon: (
+            <div className="w-8 h-8 bg-[#D1FF00] flex items-center justify-center p-1">
+                <div className="w-full h-full bg-black rounded-lg"></div>
+            </div>
+        ),
+        subServices: [
+            { name: "Product Strategy", icon: <MonitorSmartphone size={24} /> },
+            { name: "UX/UI Design", icon: <Code2 size={24} /> },
+            { name: "Market Validation", icon: <Shield size={24} /> }
+        ]
+    },
+    {
+        id: "consulting",
+        name: "IT Consulting",
+        href: "/services/consulting",
+        icon: (
+            <div className="w-8 h-8 bg-[#D1FF00] rounded-full overflow-hidden flex flex-col">
+                <div className="h-1/2 bg-black w-full"></div>
+                <div className="h-1/2 bg-[#D1FF00] w-full"></div>
+            </div>
+        ),
+        subServices: [
+            { name: "Technology Roadmap", icon: <Cpu size={24} /> },
+            { name: "Digital Transformation", icon: <Cloud size={24} /> },
+            { name: "Architecture Audit", icon: <Shield size={24} /> }
+        ]
+    },
+    {
         id: "qa",
         name: "Software testing and QA",
         href: "/services/software-testing-and-qa",

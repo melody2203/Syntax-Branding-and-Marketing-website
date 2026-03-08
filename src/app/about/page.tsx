@@ -4,10 +4,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-// Placeholder Logos
-const LOGOS = [
-    "Piper", "Leybold", "coinbase", "burda style", "Unity", "Atlas Copco", "ONE DROP", "BLOCK PARTY", "BANOVO", "toolchain", "supstat ANALYTICS", "LTSE"
-];
 
 type SquareOverlay = {
     top?: string;
@@ -46,7 +42,7 @@ const VALUES: ValueCard[] = [
     },
     {
         title: "Be accountable",
-        desc: "Own the s**t when it's good, and when it's not. Stay behind your decisions, gut and knowledge.",
+        desc: "Proud of the wins. Honest about the rest. Always accountable.",
         img: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80",
         squares: [
             { top: "30%", left: "-10%", size: "16" },
@@ -95,11 +91,11 @@ export default function AboutPage() {
                         transition={{ delay: 0.2 }}
                         className="text-lg md:text-xl text-gray-700 leading-relaxed font-sans max-w-prose"
                     >
-                        Syntax is a premium software development company dedicated to building elite digital products. Founded with a vision to merge technical precision with creative innovation, we provide a high-scale environment where engineering excellence meets impactful delivery. Our commitment to accountability and pursuit of excellence has enabled us to deliver 200+ successful projects across 11+ industries.
+                        Syntax is a premium software development company dedicated to building elite digital products. Founded with a vision to merge technical precision with creative innovation, we provide a high-scale environment where engineering excellence meets impactful delivery. In just over one year, our unwavering commitment to accountability and quality has already earned the trust of clients across 11+ industries—because for us, every project, no matter how new the partnership, is built to the highest standard.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 mt-20">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -123,17 +119,6 @@ export default function AboutPage() {
                         </p>
                     </motion.div>
                 </div>
-
-                {/* Client Logos Row */}
-                <div className="mt-32 overflow-hidden py-10 border-t border-gray-100 relative">
-                    <div className="flex animate-marquee whitespace-nowrap gap-16 items-center">
-                        {[...LOGOS, ...LOGOS].map((logo, i) => (
-                            <div key={i} className="text-2xl font-bold text-gray-400 uppercase tracking-widest shrink-0">
-                                {logo}
-                            </div>
-                        ))}
-                    </div>
-                </div>
             </section>
 
             {/* 2. Sticky Scroll Sections (How we do things & Our Mission) */}
@@ -151,7 +136,7 @@ export default function AboutPage() {
                                 <div className="space-y-6 text-lg text-gray-700 max-w-lg">
                                     <p>At Syntax, we&apos;re all about mixing technical mastery with strategic thinking to deliver the best possible digital products for our clients. We believe in code that scales and designs that inspire.</p>
                                     <p>We run in sprints (agile, usually), but essentially we are marathoners - the people we work with and the clients we work for have been with us for a long time.</p>
-                                    <p>We&apos;re all about IT (that&apos;s information tech) and &apos;kako&apos; (that&apos;s Serbian for &apos;how&apos;) —which means we&apos;re crazy curious about everything we do.</p>
+                                    <p>We&apos;re all about syntax (that&apos;s the art of code) and solutions (that&apos;s the reason we build)—which means every line has purpose.</p>
                                 </div>
                             </div>
 
@@ -234,6 +219,6 @@ export default function AboutPage() {
                     ))}
                 </div>
             </section>
-        </main>
+        </main >
     );
 }

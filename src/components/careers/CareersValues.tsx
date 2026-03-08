@@ -40,7 +40,7 @@ const CAREERS_VALUES: ValueCard[] = [
     },
     {
         title: "Be accountable",
-        desc: "Own the s**t when it's good, and when it's not. Stay behind your decisions, gut and knowledge.",
+        desc: "Proud of the wins. Honest about the rest. Always accountable.",
         img: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80",
         squares: [
             { top: "20%", left: "0", size: "80" },

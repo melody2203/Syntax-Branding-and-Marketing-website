@@ -20,14 +20,15 @@ export const metadata: Metadata = {
   description: "Modern, high-end software development company specializing in digital transformation.",
 };
 
+// Force Rebuild - 2026-03-08
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased bg-[#020202] text-white selection:bg-blue-600/30 flex flex-col min-h-screen`}>
+    <html lang="en" className="light">
+      <body className={`${inter.variable} ${instrumentSerif.variable} font-sans antialiased bg-white text-black selection:bg-blue-600/10 flex flex-col min-h-screen`}>
         <Navbar />
         <main className="flex-grow">
           {children}

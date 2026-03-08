@@ -64,7 +64,7 @@ export function CareersHero() {
                 initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ delay: 0.4, duration: 1 }}
-                className="absolute top-1/4 right-[5%] w-64 h-64 z-20 hidden xl:block"
+                className="absolute top-[28%] right-[5%] w-48 h-48 z-20 hidden xl:block"
             >
                 <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl">
                     <Image
@@ -80,7 +80,7 @@ export function CareersHero() {
                 initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 transition={{ delay: 0.6, duration: 1 }}
-                className="absolute top-[5%] right-[20%] w-80 h-96 z-10 hidden xl:block"
+                className="absolute top-[15%] right-[20%] w-60 h-72 z-10 hidden xl:block"
             >
                 <div className="relative w-full h-full rounded-sm overflow-hidden shadow-2xl">
                     <Image

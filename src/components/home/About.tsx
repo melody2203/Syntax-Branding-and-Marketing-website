@@ -59,11 +59,13 @@ export function About() {
                         </div>
 
                         {/* Floating stats card */}
-                        <div className="absolute -bottom-6 -left-6 bg-white border border-gray-100 p-6 rounded-2xl inline-block shadow-xl">
+                        <div className="absolute -bottom-6 -left-6 bg-white border border-gray-100 p-6 rounded-2xl inline-block shadow-xl max-w-[200px]">
                             <div className="text-4xl font-serif text-black">
-                                10+
+                                1+
                             </div>
-                            <div className="text-sm text-gray-500 font-medium mt-1">Years Experience</div>
+                            <div className="text-sm text-gray-500 font-medium mt-1 leading-tight">
+                                Years Experience.
+                            </div>
                         </div>
                     </motion.div>
                 </div>

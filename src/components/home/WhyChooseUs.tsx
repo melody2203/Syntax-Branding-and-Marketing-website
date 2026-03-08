@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const stats = [
-    { value: "150+", label: "Projects Delivered" },
-    { value: "50+", label: "Enterprise Clients" },
+    { value: "20+", label: "Projects Delivered" },
+    { value: "10+", label: "Enterprise Clients" },
     { value: "99%", label: "Client Retention" },
-    { value: "10+", label: "Years Experience" },
+    { value: "1+", label: "Years Experience" },
 ];
 
 export function WhyChooseUs() {
@@ -42,14 +42,20 @@ export function WhyChooseUs() {
                             <span className="text-xl md:text-2xl text-black font-medium mb-2">{stat.label}</span>
                         </div>
                     ))}
-                    {/* Triplicate for seamless infinite scroll on wide screens */}
-                    {stats.map((stat, i) => (
-                        <div key={`stat-3-${i}`} className="flex items-end gap-4 min-w-[250px]">
-                            <span className="text-6xl md:text-8xl font-serif text-blue-600 font-normal leading-none">{stat.value}</span>
-                            <span className="text-xl md:text-2xl text-black font-medium mb-2">{stat.label}</span>
-                        </div>
-                    ))}
                 </div>
+            </div>
+
+            {/* Brand Message Headline */}
+            <div className="container mx-auto px-6 md:px-12 mt-20 text-center">
+                <motion.h3
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8 }}
+                    className="text-3xl md:text-5xl font-serif text-black max-w-4xl mx-auto leading-tight"
+                >
+                    From startup to scale-up and beyond—we build IT that grows with you.
+                </motion.h3>
             </div>
         </section>
     );

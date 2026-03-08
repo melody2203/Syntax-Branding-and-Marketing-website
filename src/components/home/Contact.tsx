@@ -52,7 +52,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-black font-bold mb-1 uppercase text-xs tracking-widest">Call Us</h4>
-                                    <a href="tel:+1234567890" className="text-gray-600 hover:text-blue-600 transition-colors text-lg">+1 (555) 123-4567</a>
+                                    <a href="tel:+251945455141" className="text-gray-600 hover:text-blue-600 transition-colors text-lg">+251 945 455 141</a>
                                 </div>
                             </div>
                             <div className="flex items-start gap-6 group cursor-pointer">
@@ -61,7 +61,7 @@ export function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="text-black font-bold mb-1 uppercase text-xs tracking-widest">Visit Us</h4>
-                                    <p className="text-gray-600 text-lg">123 Innovation Drive<br />Tech District, San Francisco</p>
+                                    <p className="text-gray-600 text-lg">Bole Dembel, Amir Commercial Complex,<br />Addis Ababa, Ethiopia</p>
                                 </div>
                             </div>
                         </div>
