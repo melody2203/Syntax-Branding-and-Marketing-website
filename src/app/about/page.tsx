@@ -95,7 +95,7 @@ export default function AboutPage() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 mt-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8 mt-10">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -114,7 +114,7 @@ export default function AboutPage() {
                         className="bg-blue-600 text-white p-12 rounded-[40px] shadow-2xl"
                     >
                         <h3 className="text-3xl font-serif mb-6">Our Mission</h3>
-                        <p className="text-lg text-gray-400 leading-relaxed font-sans">
+                        <p className="text-lg text-blue-100 leading-relaxed font-sans">
                             Our mission is to empower businesses with cutting-edge software solutions. We architect, build, and scale high-performance digital platforms for startups, scale-ups, and enterprise market leaders.
                         </p>
                     </motion.div>
